@@ -1,7 +1,7 @@
 export default function Home() {
     return (
         <>
-            <h1>XSS Test Site</h1>
+            <h1>React XSS Test Site</h1>
 
             <div>
                 <h2>Description</h2>

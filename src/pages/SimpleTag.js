@@ -8,15 +8,16 @@ export default function () {
                 <h2>Description</h2>
                 <div>
                     This page puts the value of the query parameter ("xss") into a div tag.
-                    <div className="vulnerability-info-container">
-                        <label>Has XSS vulnerability:</label>
-                        <div>Yes</div>
-                        <button onClick={()=>{
-                            window.location = '/simpleTag?xss=<img src=/xss-meme.jpg onload=alert(1) />';
-                        }}>
-                            Example
-                        </button>
-                    </div>
+                    This is done with dangerouslySetInnerHTML and is not considered best practice.
+                </div>
+                <div className="vulnerability-info-container">
+                    <label>Has XSS vulnerability:</label>
+                    <div>Yes</div>
+                    <button onClick={() => {
+                        window.location = '/simpleTag?xss=<img src=/xss-meme.jpg onload=alert(1) />';
+                    }}>
+                        Example
+                    </button>
                 </div>
             </div>
 

@@ -16,7 +16,7 @@ export default function () {
                 <div className="vulnerability-info-container">
                     <label>Has XSS vulnerability:</label>
                     <div>Yes</div>
-                    <button onClick={()=>{
+                    <button onClick={() => {
                         window.location = '/escapingOnload?xss=alert(1)';
                     }}>
                         Example
