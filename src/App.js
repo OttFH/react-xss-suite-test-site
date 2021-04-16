@@ -4,12 +4,14 @@ import EscapingComment from './pages/EscapingComment';
 import EscapingHref from './pages/EscapingHref';
 import EscapingOnload from './pages/EscapingOnload';
 import ToHome from './components/ToHome';
-import Footer from "./components/Footer";
-import EscapingTag from "./pages/EscapingTag";
-import EscapingValue from "./pages/EscapingValue";
-import SimpleTag from "./pages/SimpleTag";
-import SimpleValue from "./pages/SimpleValue";
-import SimpleComment from "./pages/SimpleComment";
+import Footer from './components/Footer';
+import EscapingTag from './pages/EscapingTag';
+import EscapingValue from './pages/EscapingValue';
+import SimpleTag from './pages/SimpleTag';
+import SimpleValue from './pages/SimpleValue';
+import SimpleComment from './pages/SimpleComment';
+import PostData from './pages/PostData';
+import ReadData from './pages/ReadData';
 
 import './App.css';
 
@@ -28,6 +30,8 @@ function App() {
                     <Route path="/simpleComment" component={SimpleComment}/>
                     <Route path="/simpleTag" component={SimpleTag}/>
                     <Route path="/simpleValue" component={SimpleValue}/>
+                    <Route path="/postData" component={PostData}/>
+                    <Route path="/readData" component={ReadData}/>
                     <Route path="/" component={Home}/>
                 </Switch>
             </div>

@@ -50,6 +50,16 @@ export default function Home() {
                         <a href="/escapingOnload?xss=234">Event Handler</a>
                     </div>
                 </div>
+
+                <div className="pages-list-group">
+                    <label>Stored</label>
+                    <div>
+                        <a href="/postData?xss=234">Post</a>
+                    </div>
+                    <div>
+                        <a href="/readData?xss=234">Read</a>
+                    </div>
+                </div>
             </div>
         </>
     );
