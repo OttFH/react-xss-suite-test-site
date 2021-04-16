@@ -1,4 +1,5 @@
 import ToggleExamples from "../components/ToggleExamples";
+import {Link} from "react-router-dom";
 
 export default function Home() {
     return (
@@ -22,42 +23,42 @@ export default function Home() {
                 <div className="pages-list-group">
                     <label>Simple</label>
                     <div>
-                        <a href="/simpleTag?xss=234">Tag</a>
+                        <Link to="/simpleTag?xss=234">Tag</Link>
                     </div>
                     <div>
-                        <a href="/simpleValue?xss=234">Value</a>
+                        <Link to="/simpleValue?xss=234">Value</Link>
                     </div>
                     <div>
-                        <a href="/simpleComment?xss=234">Comment</a>
+                        <Link to="/simpleComment?xss=234">Comment</Link>
                     </div>
                 </div>
 
                 <div className="pages-list-group">
                     <label>Escaping</label>
                     <div>
-                        <a href="/escapingTag?xss=234">Tag</a>
+                        <Link to="/escapingTag?xss=234">Tag</Link>
                     </div>
                     <div>
-                        <a href="/escapingValue?xss=234">Value</a>
+                        <Link to="/escapingValue?xss=234">Value</Link>
                     </div>
                     <div>
-                        <a href="/escapingComment?xss=234">Comment</a>
+                        <Link to="/escapingComment?xss=234">Comment</Link>
                     </div>
                     <div>
-                        <a href="/escapingHref?xss=234">Href</a>
+                        <Link to="/escapingHref?xss=234">Href</Link>
                     </div>
                     <div>
-                        <a href="/escapingOnload?xss=234">Event Handler</a>
+                        <Link to="/escapingOnload?xss=234">Event Handler</Link>
                     </div>
                 </div>
 
                 <div className="pages-list-group">
                     <label>Stored</label>
                     <div>
-                        <a href="/postData?xss=234">Post</a>
+                        <Link to="/postData?xss=234">Post</Link>
                     </div>
                     <div>
-                        <a href="/readData?xss=234">Read</a>
+                        <Link to="/readData?xss=234">Read</Link>
                     </div>
                 </div>
             </div>
