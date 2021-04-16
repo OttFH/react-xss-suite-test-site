@@ -1,3 +1,5 @@
+import ToggleExamples from "../components/ToggleExamples";
+
 export default function Home() {
     return (
         <>
@@ -11,6 +13,8 @@ export default function Home() {
                     Not all pages have vulnerabilities, to test sensitivity and specificity.
                 </div>
             </div>
+
+            <ToggleExamples/>
 
             <div className="pages-list-container">
                 <h3>Pages</h3>

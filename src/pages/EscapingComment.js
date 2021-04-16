@@ -10,6 +10,7 @@ export default function () {
                 <h2>Description</h2>
                 <div>
                     This page puts the escaped value of the query parameter ("xss") into a comment.
+                    This is done with dangerouslySetInnerHTML and is not considered best practice.
                     To escape the value the npm package 'escape-html' is used.
                 </div>
                 <div className="vulnerability-info-container">

@@ -1,4 +1,5 @@
 import escape from 'escape-html';
+import ExampleButton from "../components/ExampleButton";
 
 export default function () {
     const params = new URLSearchParams(window.location.search);
@@ -16,11 +17,8 @@ export default function () {
                 <div className="vulnerability-info-container">
                     <label>Has XSS vulnerability:</label>
                     <div>Yes</div>
-                    <button onClick={() => {
-                        window.location = '/escapingOnload?xss=alert(1)';
-                    }}>
-                        Example
-                    </button>
+
+                    <ExampleButton location='/escapingOnload?xss=alert(1)'/>
                 </div>
             </div>
 

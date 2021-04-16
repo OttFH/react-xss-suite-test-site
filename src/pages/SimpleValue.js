@@ -1,3 +1,5 @@
+import ExampleButton from "../components/ExampleButton";
+
 export default function () {
     const params = new URLSearchParams(window.location.search);
 
@@ -13,11 +15,9 @@ export default function () {
                 <div className="vulnerability-info-container">
                     <label>Has XSS vulnerability:</label>
                     <div>Yes</div>
-                    <button onClick={() => {
-                        window.location = '/simpleValue?xss="><br><img src=/xss-meme.jpg onload=alert(1) /><input type="hidden';
-                    }}>
-                        Example
-                    </button>
+
+                    <ExampleButton
+                        location='/simpleValue?xss="><br><img src=/xss-meme.jpg onload=alert(1) /><input type="hidden'/>
                 </div>
             </div>
 
