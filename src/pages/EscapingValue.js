@@ -7,7 +7,7 @@ export default function () {
             <div>
                 <h2>Description</h2>
                 <div>
-                    This page puts the value of the query parameter ("xss") into the value attribute of a value tag.
+                    This page puts the escaped value of the query parameter ("xss") into the value attribute of a value tag.
                     It gets escaped by react.
                 </div>
                 <div className="vulnerability-info-container">
