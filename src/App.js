@@ -1,6 +1,7 @@
 import {Route, Switch} from 'react-router-dom';
 import Home from './pages/Home';
 import EscapingComment from './pages/EscapingComment';
+import EscapingHref from './pages/EscapingHref';
 import EscapingOnload from './pages/EscapingOnload';
 import ToHome from './components/ToHome';
 import Footer from "./components/Footer";
@@ -20,6 +21,7 @@ function App() {
 
                 <Switch>
                     <Route path="/escapingComment" component={EscapingComment}/>
+                    <Route path="/escapingHref" component={EscapingHref}/>
                     <Route path="/escapingOnload" component={EscapingOnload}/>
                     <Route path="/escapingTag" component={EscapingTag}/>
                     <Route path="/escapingValue" component={EscapingValue}/>

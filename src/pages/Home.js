@@ -40,6 +40,9 @@ export default function Home() {
                         <a href="/escapingComment?xss=234">Comment</a>
                     </div>
                     <div>
+                        <a href="/escapingHref?xss=234">Href</a>
+                    </div>
+                    <div>
                         <a href="/escapingOnload?xss=234">Event Handler</a>
                     </div>
                 </div>
