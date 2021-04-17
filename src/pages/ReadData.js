@@ -1,5 +1,5 @@
 import {postDataKey} from '../constants';
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 export default function () {
     const data = localStorage.getItem(postDataKey) || '';
@@ -17,7 +17,7 @@ export default function () {
 
             <div className="value-container">
                 <label>Value:</label>
-                <div>{data}</div>
+                <div dangerouslySetInnerHTML={{__html: data}}/>
             </div>
         </>
     );

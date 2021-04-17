@@ -1,6 +1,6 @@
 import {useRef} from 'react';
 import {postDataKey} from '../constants';
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 export default function () {
     const xssInputRef = useRef();

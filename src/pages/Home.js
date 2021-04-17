@@ -1,5 +1,5 @@
-import ToggleExamples from "../components/ToggleExamples";
-import {Link} from "react-router-dom";
+import ToggleExamples from '../components/ToggleExamples';
+import {Link} from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -55,10 +55,10 @@ export default function Home() {
                 <div className="pages-list-group">
                     <label>Stored</label>
                     <div>
-                        <Link to="/postData?xss=234">Post</Link>
+                        <Link to="/postData">Post</Link>
                     </div>
                     <div>
-                        <Link to="/readData?xss=234">Read</Link>
+                        <Link to="/readData">Read</Link>
                     </div>
                 </div>
             </div>
