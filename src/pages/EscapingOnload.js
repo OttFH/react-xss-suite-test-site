@@ -3,6 +3,8 @@ import ExampleButton from '../components/ExampleButton';
 
 export default function () {
     const params = new URLSearchParams(window.location.search);
+    const location = String.fromCharCode(47, 101, 115, 99, 97, 112, 105, 110, 103, 79, 110, 108, 111, 97, 100,
+        63, 120, 115, 115, 61, 97, 108, 101, 114, 116, 40, 49, 41);
 
     return (
         <>
@@ -18,7 +20,7 @@ export default function () {
                     <label>Has XSS vulnerability:</label>
                     <div>Yes</div>
 
-                    <ExampleButton location='/escapingOnload?xss=alert(1)'/>
+                    <ExampleButton location={location}/>
                 </div>
             </div>
 
